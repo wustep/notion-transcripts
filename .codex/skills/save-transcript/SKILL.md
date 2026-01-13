@@ -17,7 +17,7 @@ Save the current conversation transcript to Notion.
 
 ## Instructions
 
-When the user asks to save/export the transcript, follow these steps:
+When the user invokes this skill, follow these steps:
 
 ### 1. Auto-Generate Title
 

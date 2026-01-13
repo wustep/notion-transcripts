@@ -40,7 +40,7 @@ Create a concise, descriptive title (5-10 words) based on:
    - Available tag options from the Tags multi_select property
    - Available model options from the Model select property (e.g. "claude-opus-4.5", "claude-sonnet-4", etc)
    - Available tool options from the Tool select property (e.g. "Claude Code", "Cursor", "Codex CLI", etc)
-4. If fetching the database fails, inform the user: "Unable to access the database. Please ensure the database is properly configured in Notion and the MCP server is running."
+4. If fetching the database fails, inform the user: "Unable to access the database. Please ensure database is properly configured in Notion and the MCP server is running."
 
 ### 3. Auto-Detect Tags
 
@@ -142,6 +142,8 @@ notion.createPage({
   ]
 })
 ```
+
+**Important:** Only set the properties listed above (Title, Model, Tool, Tags). Do not fill in other properties like Commentary—leave those for the user to complete manually.
 
 ### 7. Confirm Success
 

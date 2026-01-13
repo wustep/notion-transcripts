@@ -34,7 +34,7 @@ Create a concise, descriptive title (5-10 words) based on:
    - Available tag options from the Tags multi_select property
    - Available model options from the Model select property (e.g. "claude-opus-4.5", "claude-sonnet-4", etc)
    - Available tool options from the Tool select property (e.g. "Claude Code", "Cursor", "Codex CLI", etc)
-4. If fetching the database fails, ask the user: "Unable to access the database. Please ensure it is shared with the Notion integration (click Share → Connections → add the integration)"
+4. If fetching the database fails, inform the user: "Unable to access the database. Please ensure database is properly configured in Notion and the MCP server is running."
 
 ### 3. Auto-Detect Tags
 
@@ -62,7 +62,7 @@ Convert the current conversation to Notion-flavored markdown:
 
 Code blocks inside callouts must be indented as children of the callout. Use triple backticks with the language identifier:
 
-````
+```
 <callout color="purple_bg">
 **Assistant**
 
@@ -73,7 +73,7 @@ Here's an example:
 	}
 	```
 </callout>
-````
+```
 
 - Always include the language hint (e.g., `typescript`, `python`, `bash`, `json`, `yaml`, `markdown`)
 - Use `text` or omit the language for plain text/output
@@ -137,16 +137,14 @@ notion.createPage({
 })
 ```
 
+**Important:** Only set the properties listed above (Title, Model, Tool, Tags). Do not fill in other properties like Commentary—leave those for the user to complete manually.
+
 ### 7. Confirm Success
 
 Report to the user:
 - The page title
 - A link to the created Notion page (if available)
 - The tags applied
-
-Then remind the user:
-
-> "Be sure to fill out the **Commentary** field with a brief description of the session, and add comments throughout the transcript about what you learned and found useful."
 
 ## Model Detection
 

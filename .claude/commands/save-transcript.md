@@ -85,7 +85,7 @@ Here's an example:
 
 Tool calls and results are an important part of the conversation record. Format them as nested callouts within the Assistant message:
 
-- **Tool calls:** Use `yellow_bg` callout with the tool name in bold
+- **Tool calls:** Use `green_bg` callout with the tool name in bold
 - **Tool results:** Summarize the result briefly (don't include full file contents or lengthy outputs)
 
 Example:
@@ -96,13 +96,13 @@ Example:
 
 Let me check the git status and read that file.
 
-	<callout color="yellow_bg">
+	<callout color="green_bg">
 	**Tool: Bash** `git status`
 
 	Output: On branch main, 2 files modified
 	</callout>
 
-	<callout color="yellow_bg">
+	<callout color="green_bg">
 	**Tool: Read** `src/config.ts`
 
 	Read 45 lines from config file containing database settings.

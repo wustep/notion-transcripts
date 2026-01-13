@@ -58,10 +58,11 @@ Create a brief summary (3-5 bullet points) of this conversation covering:
 
 Convert the current conversation to Notion-flavored markdown:
 - Start with the generated summary in a callout block
+  - <callout>**Summary**<br><br>Summary bullet points </callout>
 - Add a horizontal rule
 - Format each message as a callout (no icon) with a bold speaker label:
   - User messages: `<callout color="blue_bg">**User**<br><br>Message content</callout>`
-  - Assistant messages: `<callout color="purple_bg">**Assistant**<br><br>Message content</callout>`
+  - Assistant messages: `<callout>**Assistant**<br><br>Message content</callout>`
 - Each callout should contain the full message content with proper formatting
 
 #### Code Block Formatting
@@ -69,7 +70,7 @@ Convert the current conversation to Notion-flavored markdown:
 Code blocks inside callouts must be indented as children of the callout. Use triple backticks with the language identifier:
 
 ```
-<callout color="purple_bg">
+<callout>
 **Assistant**
 
 Here's an example:

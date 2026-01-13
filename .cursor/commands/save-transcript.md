@@ -53,6 +53,7 @@ Convert the current conversation to Notion-flavored markdown:
   - User messages: `<callout color="blue_bg">**User**<br><br>Message content</callout>`
   - Assistant messages: `<callout>**Assistant**<br><br>Message content</callout>`
 - Each callout should contain the full message content with proper formatting
+- Exclude the /save-transcript message and response from the transcript
 
 #### Code Block Formatting
 

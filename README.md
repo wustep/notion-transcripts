@@ -13,7 +13,7 @@ Save AI conversation transcripts to a Notion database. Supports **Claude Code**,
 
 ## Installation
 
-Follow the instructions at `http://wustep.notion.site/notion-transcripts` where you can duplicate the database template.
+Follow the instructions at [wustep.notion.site/notion-transcripts](http://wustep.notion.site/notion-transcripts) where you can duplicate the database template.
 
 ## Usage
 

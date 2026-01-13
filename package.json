@@ -1,0 +1,17 @@
+{
+  "name": "notion-transcripts",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["notion", "transcripts", "claude-code"],
+  "author": "",
+  "license": "ISC",
+  "description": "Save Claude Code transcripts to Notion",
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

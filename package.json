@@ -11,11 +11,16 @@
     "build": "tsc",
     "test": "npm run build && node --test dist/__tests__/*.test.js"
   },
-  "keywords": ["notion", "transcripts", "claude-code"],
+  "keywords": [
+    "notion",
+    "transcripts",
+    "claude-code"
+  ],
   "author": "",
   "license": "ISC",
   "description": "Save Claude Code transcripts to Notion",
   "devDependencies": {
+    "@types/node": "^25.0.8",
     "typescript": "^5.3.0"
   }
 }

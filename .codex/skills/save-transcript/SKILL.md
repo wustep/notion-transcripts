@@ -23,14 +23,16 @@ When the user invokes this skill, follow these steps:
 
 ## 1. Read Database
 
-DATABASE_ID: 2e75cb08cf2c8033b424e59d31623ed0
+DATABASE_ID: <Replace with your database ID, e.g. 1a2b9f3c4e7d8a0b5c6d2e4f9a1b7c8d>
 
 1. Fetch the database ID above, if set, using `notion-fetch`.
 
-2. If and only if fetching the database fails or the database ID is not set above, then inform the user: 
-"I was unable to access the Notion transcripts database. Please ensure the database is properly configured in the skill file. Please provide the URL to your Transcripts database in Notion and I can set it for you, or you can manually set it in `.codex/skills/save-transcript/SKILL.md`". 
-(Links are formatted like `notion.so/[workspaceId]/[databaseId]?v=[viewId]` with workspaceId and viewId optional.)
-And if applicable, edit the skill file to set the database ID.
+2. If fetching the database fails or the database ID is not set above, inform the user:
+
+> **Unable to access the Notion transcripts database.**
+> To fix this, provide your Transcripts database URL (e.g., `notion.so/workspace/1a2b3c4d5e6f...`) and I'll configure it for you. Or manually set the DATABASE_ID in `.codex/skills/save-transcript/SKILL.md`.
+
+Then, if the user provides a URL, extract the database ID and update this skill file.
 
 3. Fetch the database schema to discover:
 - Available Tool options from the Tool select property (e.g. "Claude Code", "Cursor", "Codex CLI", etc)

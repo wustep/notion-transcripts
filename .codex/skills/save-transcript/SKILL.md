@@ -70,6 +70,8 @@ First, create a brief summary (3-5 bullet points) of this conversation covering,
 - Important code changes or files modified
 - Outcome/result
 
+**Important:** Exclude AGENTS.md `<instructions>`, `<environment_context>` from the transcript.
+
 Convert the current conversation to Notion-flavored markdown:
 - Start with the generated summary in a callout block
 

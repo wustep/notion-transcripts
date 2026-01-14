@@ -2,6 +2,8 @@
 
 Save AI conversation transcripts to a Notion database. Supports **Claude Code**, **Cursor**, and **Codex CLI**.
 
+Note: Codex CLI has some known issues, see below.
+
 ## Features
 
 - Auto-generates titles, summaries, and tags
@@ -36,7 +38,7 @@ Run the save-transcript command in your AI tool:
 |------|---------|-------|
 | Claude Code | `/save-transcript` | |
 | Cursor | `/save-transcript` | |
-| Codex CLI | `$save-transcript` | Can be very slow :"( will explore how to improve! |
+| Codex CLI | `$save-transcript` | Can be very slow and gets its own model name wrong sometimes |
 
 ## Troubleshooting
 

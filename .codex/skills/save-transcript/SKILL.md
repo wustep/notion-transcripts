@@ -1,3 +1,10 @@
+---
+name: save-transcript
+description: Use when the user asks to save, export, or record the conversation transcript.
+metadata:
+  short-description: Save a transcript of the current conversation to Notion.
+---
+
 # Save Transcript Skill
 
 Save the current conversation to a Notion page in a transcripts database.
@@ -21,13 +28,13 @@ DATABASE_ID: 2e75cb08cf2c8033b424e59d31623ed0
 1. Fetch the database ID above, if set, using `notion-fetch`.
 
 2. If and only if fetching the database fails or the database ID is not set above, then inform the user: 
-"I was unable to access the Notion transcripts database. Please ensure the database is properly configured in the skill file. Please provide the URL to your Transcripts database in Notion and I can set it for you, or you can manually set it in `.claude/commands/save-transcript.md`". 
+"I was unable to access the Notion transcripts database. Please ensure the database is properly configured in the skill file. Please provide the URL to your Transcripts database in Notion and I can set it for you, or you can manually set it in `.codex/skills/save-transcript/SKILL.md`". 
 (Links are formatted like `notion.so/[workspaceId]/[databaseId]?v=[viewId]` with workspaceId and viewId optional.)
 And if applicable, edit the skill file to set the database ID.
 
 3. Fetch the database schema to discover:
 - Available Tool options from the Tool select property (e.g. "Claude Code", "Cursor", "Codex CLI", etc)
-- Available Model options from the Model select property (e.g. "claude-opus-4.5", "claude-sonnet-4", etc)
+- Available Model options from the Model select property (e.g. "gpt-5.2-codex-high", "gpt-5.2", etc)
 - Available Tag options from the Tags multi_select property
 - Inform the user if any of these properties are missing, but continue on otherwise and skip them if they are not present.
 - Note that you should never add new Tag options, but you can add Tool or Model options if they are not present. 

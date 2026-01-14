@@ -52,3 +52,7 @@ Run the save-transcript command in your AI tool:
 ## License
 
 MIT
+
+## Inspiration
+
+Inspired by [simonw's claude-code-transcripts](https://simonwillison.net/2025/Dec/25/claude-code-transcripts/).

@@ -21,11 +21,11 @@ Edit `.env` file to have `NOTION_TRANSCRIPT_DATABASE_ID` (dashless UUID). This w
 
 Run the save-transcript command in your AI tool:
 
-| Tool | Command |
-|------|---------|
-| Claude Code | `/save-transcript` |
-| Cursor | Ask to "save transcript" or reference the rule |
-| Codex CLI | Ask to "save transcript" |
+| Tool | Command | Notes |
+|------|---------|-------|
+| Claude Code | `/save-transcript` | |
+| Cursor | `/save-transcript` | |
+| Codex CLI | '$save-transcript' | Note: very slow :"( |
 
 The skill will:
 1. Generate a descriptive title based on the conversation

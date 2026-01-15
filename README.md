@@ -2,7 +2,7 @@
 
 Save AI conversation transcripts to a Notion database. Supports **Claude Code**, **Cursor**, and **Codex CLI**.
 
-Note: Codex CLI has some known issues, see below.
+Note: Codex CLI has some known issues and is not quite recommended yet, see below.
 
 ## Features
 
